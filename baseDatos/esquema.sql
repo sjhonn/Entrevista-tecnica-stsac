@@ -1,0 +1,28 @@
+CREATE TABLE IF NOT EXISTS usuarios (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nombre TEXT NOT NULL,
+  correo TEXT NOT NULL UNIQUE,
+  clave TEXT NOT NULL,
+  rol TEXT NOT NULL DEFAULT 'operativo',
+  creado_en TEXT DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS operativos (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  nombre TEXT NOT NULL,
+  telefono TEXT,
+  placa_vehiculo TEXT,
+  estado TEXT NOT NULL DEFAULT 'activo',
+  creado_en TEXT DEFAULT CURRENT_TIMESTAMP
+);
+
+CREATE TABLE IF NOT EXISTS envios (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  cliente TEXT NOT NULL,
+  origen TEXT NOT NULL,
+  destino TEXT NOT NULL,
+  operativo_id INTEGER,
+  estado TEXT NOT NULL DEFAULT 'pendiente',
+  fecha_envio TEXT DEFAULT CURRENT_TIMESTAMP,
+  FOREIGN KEY (operativo_id) REFERENCES operativos(id)
+);

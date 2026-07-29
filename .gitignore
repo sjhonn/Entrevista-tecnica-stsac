@@ -1,0 +1,4 @@
+*.sqlite
+respaldos/*.zip
+!respaldos/.gitkeep
+.env

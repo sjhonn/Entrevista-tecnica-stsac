@@ -1,0 +1,18 @@
+/* Ajustes visuales propios del sistema, complementarios a Bootstrap 5 */
+body {
+  min-height: 100vh;
+}
+
+.navbar-brand i {
+  color: #ffc107;
+}
+
+.card {
+  border-radius: 0.75rem;
+}
+
+@media (max-width: 576px) {
+  .table-responsive table {
+    font-size: 0.85rem;
+  }
+}
