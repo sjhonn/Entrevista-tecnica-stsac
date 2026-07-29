@@ -1,9 +1,8 @@
-# Supply Transport S.A.C. — Sistema Web-Admin.
+# Supply Transport S.A.C. — Sistema Web-Admin
 
 Sistema de administración web para la empresa peruana de logística y transporte **Supply Transport S.A.C.** Reemplaza la versión anterior (sitio estático en GitHub Pages) por una aplicación funcional con panel de administración, base de datos, y exportación/respaldo de información.
 
 > Versión: **1.0** · Ver [ROADMAP.md](ROADMAP.md) para el plan hacia la versión 2.0.
-
 
 ## 1. Stack tecnológico
 
