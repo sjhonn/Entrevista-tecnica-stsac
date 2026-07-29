@@ -4,6 +4,7 @@ Sistema de administración web para la empresa peruana de logística y transport
 
 > Versión: **1.0** · Ver [ROADMAP.md](ROADMAP.md) para el plan hacia la versión 2.0.
 
+
 ## 1. Stack tecnológico
 
 | Capa | Tecnología |
